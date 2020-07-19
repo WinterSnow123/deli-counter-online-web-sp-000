@@ -20,6 +20,6 @@ def now_serving(array)
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{array[0]}."
-    array[0].delete!
+    array.delete(array[0])
   end
 end
